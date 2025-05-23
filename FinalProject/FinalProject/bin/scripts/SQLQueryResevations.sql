@@ -1,0 +1,6 @@
+SELECT TOP (1000) [ProductID]
+      ,[ProductName]
+      ,[Location]
+      ,[IsReserved]
+      ,[ReservationDate]
+  FROM [DMA-CSD-S241_10519155].[dbo].[Product]

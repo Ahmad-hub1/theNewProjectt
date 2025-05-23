@@ -138,7 +138,7 @@ public class ProductDB {
         try (PreparedStatement ps = connection.prepareStatement(sql)) {
             ps.setInt(1, productId);
             if (ps.executeUpdate() == 0) {
-                throw new SQLException("Produkt ikke fundet eller ikke opdateret");
+                throw new SQLException("Produkt ikke fundet");
             }
         }
     }
